@@ -31,9 +31,6 @@ public class Recipe {
     private Difficulty difficulty;
     private Notes notes;
 
-    @DBRef
-    private Set<Category> categories = new HashSet<>();
-
     public void setNotes(Notes notes) {
         if (notes != null) {
             this.notes = notes;
