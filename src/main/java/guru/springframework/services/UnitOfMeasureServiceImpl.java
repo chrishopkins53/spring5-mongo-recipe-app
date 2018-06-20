@@ -27,5 +27,9 @@ public class UnitOfMeasureServiceImpl implements UnitOfMeasureService {
                 .findAll()
                 .map(unitOfMeasureToUnitOfMeasureCommand::convert);
 
+//        return StreamSupport.stream(unitOfMeasureReactiveRepository.findAll()
+//                .spliterator(), false)
+//                .map(unitOfMeasureToUnitOfMeasureCommand::convert)
+//                .collect(Collectors.toSet());
     }
 }
